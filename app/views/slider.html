@@ -1,0 +1,50 @@
+<div ng-class=" class3 " class="col-xs-7">
+    <div class="itemTab">
+        <!-- item tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#Tab-1" aria-controls="Tab-1" role="tab" data-toggle="tab">Tab-1</a></li>
+            <li><a href="#Tab-2" aria-controls="Tab-2" role="tab" data-toggle="tab">Tab-2</a></li>
+        </ul>
+        <!-- item tabs -->
+        <!-- item Tab panes -->
+        <div class="tab-content">
+            <!-- Tab-1 -->
+            <div role="tabpanel" class="tab-pane active" id="Tab-1">
+                <!--Tab-1 item-1 -->
+                <div class="panel panel-default items">
+                    <div class="panel-heading">{{oItem[1].head}}</div>
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-6 center-block"><img src="{{oItem[0].icon}}" alt="ïmage" class="img-responsive"></div>
+                        <div class="col-xs-12 col-sm-6">
+                            <h4>{{oItem[1].des}}</h4></div>
+                    </div>
+                </div>
+                <!--Tab-1 item-2-->
+                <div class="panel panel-default items">
+                    <div class="panel-heading">{{oItem[2].head}}</div>
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-6 center-block"><img src="{{oItem[1].icon}}" alt="ïmage" class="img-responsive"></div>
+                        <div class="col-xs-12 col-sm-6">
+                            <h4>{{oItem[2].des}}</h4></div>
+                    </div>
+                </div>
+                <!--Tab-1 item-3-->
+                <div class="panel panel-default items">
+                    <div class="panel-heading">{{oItem[0].head}}</div>
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-6 center-block"><img src="{{oItem[2].icon}}" alt="ïmage" class="img-responsive"></div>
+                        <div class="col-xs-12 col-sm-6">
+                            <h4>{{oItem[0].des}}</h4></div>
+                    </div>
+                </div>
+                <!--Tab-1 items -->
+            </div>
+            <!-- Tab-2 -->
+            <div role="tabpanel" class="tab-pane" id="Tab-2">...</div>
+        </div>
+        <!-- ng-class="sortKey == state && ' col-xs-1 col-xs-offset-2' || ''"item Tab panes -->
+    </div>
+</div>
+<div class="col-xs-1 butn">
+    <button class=" glyphicon glyphicon-triangle-right" ng-click="changeClass()"> </button>
+</div>
